@@ -1,0 +1,14 @@
+Camera Pick (Node)
+===========================================
+
+Description
+
+Inputs:
+-------
+
+inputs
+
+Outputs:
+--------
+
+outputs

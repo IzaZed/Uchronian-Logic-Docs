@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NLPositiveIntegerFieldSocket &mdash; Uchronian Logic Pre-Alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'Pre-Alpha',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="NLPseudoConditionSocket" href="nlpseudoconditionsocket.html" />
+    <link rel="prev" title="NLPositiveFloatSocket" href="nlpositivefloatsocket.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../main.html" class="icon icon-home" alt="Documentation Home"> Uchronian Logic
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.5.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodes/nodes.html">Nodes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../node_components.html">Node Components</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../base_classes.html">Base Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes_basic_list.html">Basic Node Types</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../sockets_list.html">Sockets</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nlactionsocket.html">NLActionSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlalphafloatsocket.html">NLSocketAlphaFloat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlalphasocket.html">NLAlphaSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlbooleansocket.html">NLBooleanSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlconditionsocket.html">NLConditionSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlcontrolleraxissocket.html">NLSocketControllerAxis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlcontrollerbuttonssocket.html">NLSocketControllerButtons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nldistancechecksocket.html">NLSocketDistanceCheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlgameobjectsocket.html">NLGameObjectSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlikmodesocket.html">NLSocketIKMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlintegersocket.html">NLIntegerFieldSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nllogicoperatorsocket.html">NLSocketLogicOperator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlloopcountsocket.html">NLSocketLoopCount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nloptionalpositivefloatsocket.html">NLSocketOptionalPositiveFloat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlparametersocket.html">NLParameterSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlpositivefloatsocket.html">NLPositiveFloatSocket</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">NLPositiveIntegerFieldSocket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#attributes">Attributes:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="nlpseudoconditionsocket.html">NLPseudoConditionSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlsoundsocket.html">NLSocketSound</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nlstringsocket.html">NLQuotedStringFieldSocket</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../node_classes.html">Node Classes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../main.html">Uchronian Logic</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../main.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../node_components.html">Node Components</a> &raquo;</li>
+        
+          <li><a href="../sockets_list.html">Sockets</a> &raquo;</li>
+        
+      <li>NLPositiveIntegerFieldSocket</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/doc/sockets/nlpositiveintegersocket.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>inherits from: <a class="reference internal" href="../netlogicsockettype.html"><span class="doc">NetLogicSocketType</span></a>, <a class="reference external" href="https://docs.blender.org/api/current/bpy.types.NodeSocket.html?highlight=nodesocket#bpy.types.NodeSocket">bpy.types.NodeSocket</a>.</p>
+<div class="section" id="nlpositiveintegerfieldsocket">
+<h1>NLPositiveIntegerFieldSocket<a class="headerlink" href="#nlpositiveintegerfieldsocket" title="Permalink to this headline">¶</a></h1>
+<p><code class="samp docutils literal"><span class="pre">bge_netlogic.basicnodes.NLPositiveIntegerFieldSocket</span></code></p>
+<div class="section" id="attributes">
+<h2>Attributes:<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="samp docutils literal"><span class="pre">bl_idname</span></code></li>
+<li><code class="samp docutils literal"><span class="pre">bl_label</span></code></li>
+<li><dl class="first docutils">
+<dt><code class="samp docutils literal"><span class="pre">value</span></code></dt>
+<dd><dl class="first last docutils">
+<dt><code class="docutils literal"><span class="pre">bpy.props.IntProperty</span></code></dt>
+<dd><code class="docutils literal"><span class="pre">min</span></code>: 0, <code class="docutils literal"><span class="pre">default</span></code>: 0</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>Functions:<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="samp docutils literal"><span class="pre">draw_color()</span></code></li>
+<li><code class="samp docutils literal"><span class="pre">draw()</span></code></li>
+<li><code class="samp docutils literal"><span class="pre">get_unlinked_value()</span></code></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="nlpseudoconditionsocket.html" class="btn btn-neutral float-right" title="NLPseudoConditionSocket" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="nlpositivefloatsocket.html" class="btn btn-neutral float-left" title="NLPositiveFloatSocket" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Iza Zed
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
