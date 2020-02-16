@@ -1,4 +1,4 @@
-version: 1.4.9
+version: 2
 
 sphinx:
         configuration: conf.py
