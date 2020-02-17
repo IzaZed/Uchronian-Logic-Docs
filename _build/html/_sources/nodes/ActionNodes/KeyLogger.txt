@@ -1,14 +1,23 @@
 Key Logger (Node)
 ===========================================
+Category: *Keyboard*
 
-Description
+Prints and returns pressed keys.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input condition
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False
+
+Key Code
+    The code of the pressed key as Integer
+
+Logged Char
+    The Logged Character as String
