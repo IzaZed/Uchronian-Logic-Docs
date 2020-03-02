@@ -1,14 +1,21 @@
 Load Blender File (Node)
 ===========================================
+Category: *Game*
 
-Description
+Loads up a new blender file. *TODO*: Manage Path
+so that it can be made relative.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Path
+    The path to the blender file
 
 Outputs:
 --------
 
-outputs
+When Loaded
+    True when the file is loaded, else False

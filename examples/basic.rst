@@ -1,4 +1,4 @@
-A Basic     Example
+A Basic Example
 =========================
 
 In this example, we will set up a basic logic tree.

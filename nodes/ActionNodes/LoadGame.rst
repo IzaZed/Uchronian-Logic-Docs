@@ -1,14 +1,26 @@
 Load Game (Node)
 ===========================================
+Category: *Game*
 
-Description
+Load a previously saved game (Feature in development)
+
+Node Properties:
+----------------
+
+Load from
+    File path, defaults to File Path\Data\
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Slot
+    The slot from which to load the game (must be previously saved)
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False
