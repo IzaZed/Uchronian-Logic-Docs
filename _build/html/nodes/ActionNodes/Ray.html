@@ -151,7 +151,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +259,37 @@
             
   <div class="section" id="ray-node">
 <h1>Ray (Node)<a class="headerlink" href="#ray-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Ray Casts</em></p>
+<p>Cast a ray from one position to another.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Origin</dt>
+<dd>Location from which to cast the ray as vector [x, y, z]</dd>
+<dt>Destination</dt>
+<dd>Destination as vector [x, y, z]</dd>
+<dt>Property</dt>
+<dd>Only look for objects with this Property</dd>
+<dt>Distance</dt>
+<dd>Length of the ray</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Has Result</dt>
+<dd>True if the ray hit something</dd>
+<dt>Picked Object</dt>
+<dd>None if the ray hit nothing, else the object it hit</dd>
+<dt>Picked Point</dt>
+<dd>Hit location as vector [x, y, z]</dd>
+<dt>Picked Normal</dt>
+<dd>Normal of the face the ray hit as vector [x, y, z]</dd>
+<dt>Ray Direction</dt>
+<dd>Direction as vector [x, y, z]</dd>
+</dl>
 </div>
 </div>
 

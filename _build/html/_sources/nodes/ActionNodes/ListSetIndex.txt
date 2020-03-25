@@ -1,14 +1,29 @@
 List: Set Index (Node)
 ===========================================
+Category: *Python*
 
-Description
+Sets a value at given index in a given list.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+List
+    The list of which to set the Index
+
+Index
+    The index at which to set the value
+
+value
+    The value to set at Index in List
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False
+
+List
+    The modified List

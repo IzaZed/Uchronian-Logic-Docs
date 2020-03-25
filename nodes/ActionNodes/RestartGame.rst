@@ -1,14 +1,11 @@
 Restart Game (Node)
 ===========================================
+Category: *Game*
 
-Description
+Reload the currently open blender file and start the game. Reverts the scene back to the last saved state of the blender file.
 
 Inputs:
 -------
 
-inputs
-
-Outputs:
---------
-
-outputs
+Condition
+    The input Condition

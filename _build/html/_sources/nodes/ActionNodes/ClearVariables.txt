@@ -7,7 +7,7 @@ Node Properties:
 ----------------
 
 Clear In
-    File path, defaults to Users\Documents\My Games\GameTitle\
+    File path, defaults to File Path\Data\
 
 Inputs:
 -------

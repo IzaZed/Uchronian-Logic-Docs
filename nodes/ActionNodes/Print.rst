@@ -1,14 +1,20 @@
 Print (Node)
 ===========================================
+Category: *Utilities*
 
-Description
+Print the given value to the console
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+value
+    Print this value
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

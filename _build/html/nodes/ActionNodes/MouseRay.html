@@ -151,7 +151,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +259,33 @@
             
   <div class="section" id="mouse-ray-node">
 <h1>Mouse Ray (Node)<a class="headerlink" href="#mouse-ray-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Ray Casts</em></p>
+<p>Casts a ray from the camera to where the mouse is pointing.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Camera</dt>
+<dd>The camera object from which to cast the ray</dd>
+<dt>Property</dt>
+<dd>An optional property. If set, only count if the ray hits anything with this property</dd>
+<dt>Distance</dt>
+<dd>The distance the ray travels</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Has Result</dt>
+<dd>True if the ray hit a valid target, else False</dd>
+<dt>Picked object</dt>
+<dd>The Object that got hit by the ray</dd>
+<dt>PickedPoint</dt>
+<dd>Vector [X, Y, Z], the point that was hit by the ray</dd>
+<dt>PickedNormal</dt>
+<dd>Vactor [X, Y, Z], The normal vector of the face the ray hit</dd>
+</dl>
 </div>
 </div>
 

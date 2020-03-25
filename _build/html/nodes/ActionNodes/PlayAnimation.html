@@ -151,7 +151,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +259,49 @@
             
   <div class="section" id="play-animation-node">
 <h1>Play Animation (Node)<a class="headerlink" href="#play-animation-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Animation</em></p>
+<p>Play selected animation using given parameters</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Armature</dt>
+<dd>Armature Object which contains the action</dd>
+<dt>Action Name</dt>
+<dd>Name of the action to play</dd>
+<dt>Stop When Done</dt>
+<dd>Wether to loop the action or stop playback when maximum frame is reached</dd>
+<dt>Start Frame</dt>
+<dd>Frame at which to start the animation</dd>
+<dt>End Frame</dt>
+<dd>Frame at which to end the animation</dd>
+<dt>Layer</dt>
+<dd>Play the animation on this layer</dd>
+<dt>Priority</dt>
+<dd>Play animations with a lower number over animations with a higher number</dd>
+<dt>Play Mode</dt>
+<dd>Play animation using this method</dd>
+<dt>Layer Weight</dt>
+<dd>Influence of the layer animation is played on</dd>
+<dt>Speed</dt>
+<dd>Playback speed</dd>
+<dt>Blendin</dt>
+<dd>Frames to interpolate animations</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Started</dt>
+<dd>True if the animation has just Started</dd>
+<dt>Running</dt>
+<dd>True as long as the animation is running</dd>
+<dt>Finished</dt>
+<dd>True when the last frame is reached and animation stopped</dd>
+<dt>Current Frame</dt>
+<dd>Returns the active frame of the animation</dd>
+</dl>
 </div>
 </div>
 

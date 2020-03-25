@@ -1,14 +1,23 @@
-Set Gravity (Node)
+Character: Set Gravity (Node)
 ===========================================
+Category: *Physics*
 
-Description
+Set the downward force for this character.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Object
+    The character object
+
+Gravity
+    New Gravity
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

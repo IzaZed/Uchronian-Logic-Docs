@@ -49,7 +49,6 @@ These are the available Action Nodes:
    Print
    Ray
    RemoveObject
-   RemoveScene
    RemoveVariable
    ReplaceMesh
    RestartGame

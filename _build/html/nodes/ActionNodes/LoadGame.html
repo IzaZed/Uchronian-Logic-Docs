@@ -138,6 +138,7 @@
 <li class="toctree-l3"><a class="reference internal" href="ListSetIndex.html">List: Set Index (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="LoadBlenderFile.html">Load Blender File (Node)</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Load Game (Node)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#node-properties">Node Properties:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inputs">Inputs:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#outputs">Outputs:</a></li>
 </ul>
@@ -151,7 +152,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +260,30 @@
             
   <div class="section" id="load-game-node">
 <h1>Load Game (Node)<a class="headerlink" href="#load-game-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Game</em></p>
+<p>Load a previously saved game (Feature in development)</p>
+<div class="section" id="node-properties">
+<h2>Node Properties:<a class="headerlink" href="#node-properties" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Load from</dt>
+<dd>File path, defaults to File PathData</dd>
+</dl>
+</div>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Slot</dt>
+<dd>The slot from which to load the game (must be previously saved)</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Done</dt>
+<dd>True if the node performed successfully, else False</dd>
+</dl>
 </div>
 </div>
 

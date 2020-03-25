@@ -1,14 +1,20 @@
 Remove Object (Node)
 ===========================================
+Category: *Objects*
 
-Description
+Remove the given object from the scene.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Object
+    Remove this object
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

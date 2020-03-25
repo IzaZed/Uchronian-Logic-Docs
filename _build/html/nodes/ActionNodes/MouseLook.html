@@ -151,7 +151,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +259,43 @@
             
   <div class="section" id="mouse-look-node">
 <h1>Mouse Look (Node)<a class="headerlink" href="#mouse-look-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Mouse</em></p>
+<p>Makes one or to objects move corresponding to mouse movevment.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Main Object</dt>
+<dd>The object that rotates around the Z axis (Left/Right)
+and, if no Head is set, around the Y axis (Up/Down)</dd>
+<dt>Head (Optional)</dt>
+<dd>When set, the Main object does not rotate around the
+Y axis, but the Head does</dd>
+<dt>Inverted</dt>
+<dd>Wether or not the Y axis (Up/Down) rotation is inverted</dd>
+<dt>Sensitivity</dt>
+<dd>Sets the mouse sensitivity</dd>
+<dt>Cap Left / Right</dt>
+<dd>Wether or not to cap Z axis rotation</dd>
+<dt>Limits Z</dt>
+<dd>A set of two values; the first defining how far to the left
+the player can look, the second how far to the right.
+Uses degrees, can only be positive</dd>
+<dt>Cap Up / Down</dt>
+<dd>Wether or not to cap Y axis rotation</dd>
+<dt>Limits Y</dt>
+<dd>A set of two values; the first defining how far up
+the player can look, the second how far down.
+Uses degrees, can only be positive</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Done</dt>
+<dd>True if the node performed successfully, else False</dd>
+</dl>
 </div>
 </div>
 

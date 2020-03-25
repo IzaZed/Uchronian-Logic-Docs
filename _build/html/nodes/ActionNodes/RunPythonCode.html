@@ -147,7 +147,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +259,32 @@
             
   <div class="section" id="run-python-code-node">
 <h1>Run Python Code (Node)<a class="headerlink" href="#run-python-code-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Python</em></p>
+<p>Execute a function from a loaded python file.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Module</dt>
+<dd>Name of the module without the &#8216;.py&#8217; ending. NOTE: File must have &#8216;.py&#8217; ending though!</dd>
+<dt>Function</dt>
+<dd>Name of the callback without paranthesis</dd>
+<dt>Use Argument</dt>
+<dd>Wether the function uses an argument</dd>
+<dt>Argument</dt>
+<dd>The argument of the function. If packed as dict or list, multiple arguments can be given</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>When Done</dt>
+<dd>True if the object reached destination, else False</dd>
+<dt>Returned Value</dt>
+<dd>Return value of the function if there is one, else None
+<em>This socket is optional</em></dd>
+</dl>
 </div>
 </div>
 

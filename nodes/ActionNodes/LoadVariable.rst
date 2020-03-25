@@ -2,13 +2,13 @@ Load Variable (Node)
 ===========================================
 Category: *Variables*
 
-Lad a previously saved variable into the game
+Load a previously saved variable into the game
 
 Node Properties:
 ----------------
 
 Load from
-    File path, defaults to File Path\Data\
+    File path, defaults to *File Path\Data*
 
 Inputs:
 -------

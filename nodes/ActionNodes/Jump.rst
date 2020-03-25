@@ -1,6 +1,6 @@
-Jump (Node)
+Character: Jump (Node)
 ===========================================
-Category: *Character Physics*
+Category: *Physics*
 
 Makes an object jump if it is set to Character Physics
 

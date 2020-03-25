@@ -147,7 +147,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -260,14 +259,28 @@
             
   <div class="section" id="set-actuator-value-node">
 <h1>Set Actuator Value (Node)<a class="headerlink" href="#set-actuator-value-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Logic Bricks</em></p>
+<p>Change a value within an actuator.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Actuator</dt>
+<dd>The actuator of which to change a value</dd>
+<dt>Field</dt>
+<dd>Name of the value to change (e.g. layerWeight in Action Actuator)
+NOTE: Knowledge of the actuators attributes required, as each actuator type has different values, see Blender API</dd>
+<dt>Value</dt>
+<dd>New value for the field, careful to use the right kind of value (String, Int, etc)!</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Done</dt>
+<dd>True if the node performed successfully, else False</dd>
+</dl>
 </div>
 </div>
 

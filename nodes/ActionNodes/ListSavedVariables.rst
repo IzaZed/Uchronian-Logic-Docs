@@ -8,7 +8,7 @@ Node Properties:
 ----------------
 
 List from
-    File path, defaults to File Path\Data\
+    File path, defaults to *File Path\Data*
 
 Inputs:
 -------

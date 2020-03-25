@@ -1,14 +1,29 @@
 Rotate To (Node)
 ===========================================
+Category: *Transformation*
 
-Description
+Rotate an object to a point.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Object
+    Rotate this object
+
+Target
+    Target point as vector [x, y, z]
+
+Rot Axis
+    Axis around which to rotate the Object
+
+Front
+    Make this axis face towards the target
 
 Outputs:
 --------
 
-outputs
+When Done
+    True if the object reached destination, else False

@@ -1,14 +1,27 @@
 Remove Variable (Node)
 ===========================================
+Category: *Variables*
 
-Description
+Delete a saved variable.
+
+Node Properties:
+----------------
+
+Remove From
+    File path, defaults to *File Path\Data*
+
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Name
+    Remove the variable with this name
 
 Outputs:
 --------
 
-outputs
+When Done
+    True if the object reached destination, else False

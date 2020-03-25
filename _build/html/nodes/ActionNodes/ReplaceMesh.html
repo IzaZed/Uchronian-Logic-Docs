@@ -147,7 +147,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Replace Mesh (Node)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#inputs">Inputs:</a></li>
@@ -260,14 +259,29 @@
             
   <div class="section" id="replace-mesh-node">
 <h1>Replace Mesh (Node)<a class="headerlink" href="#replace-mesh-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+<p>Category: <em>Objects</em></p>
+<p>Replace an objects mesh (geometry) with another mesh.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Object</dt>
+<dd>The object to be replaced</dd>
+<dt>New Mesh</dt>
+<dd>The mesh to replace all meshes of the old one. NOTE: Mesh name needed, not object name!</dd>
+<dt>Use Display</dt>
+<dd>Wether to show the new mesh or hide it</dd>
+<dt>Use Physics</dt>
+<dd>Wether to enable physics for the new mesh</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>When Done</dt>
+<dd>True if the object reached destination, else False</dd>
+</dl>
 </div>
 </div>
 
