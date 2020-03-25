@@ -1,14 +1,26 @@
 Set Object Visibility (Node)
 ===========================================
+Category: *Objects*
 
-Description
+Set an objects visibility.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Object
+    The object whose visibility to manipulate
+
+Visibility
+    Wether the object should be visible
+
+Include Children
+    Wether children of the object should be set to the same visibility state
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

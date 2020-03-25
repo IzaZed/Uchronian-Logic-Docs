@@ -1,14 +1,20 @@
 Set Mouse Cursor Visiblity (Node)
 ===========================================
+Category: *Mouse*
 
-Description
+Determine wether the mouse cursor should be visible or not
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Visible
+    Wther the coursur should be visible
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False
