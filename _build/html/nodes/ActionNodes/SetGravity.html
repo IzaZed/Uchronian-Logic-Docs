@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set Gravity (Node) &mdash; Uchronian Logic Pre-Alpha documentation</title>
+  <title>Character: Set Gravity (Node) &mdash; Uchronian Logic Pre-Alpha documentation</title>
   
 
   
@@ -127,9 +127,9 @@
 <li class="toctree-l3"><a class="reference internal" href="FollowPath.html">Follow Path (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="GetObject.html">Get Object (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="GetObjectFromScene.html">Get Object From Scene (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="GetPhysicsInfo.html">Get Physics Info (Node)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GetPhysicsInfo.html">Character: Get Physics Info (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="InstallSubTree.html">Install Sub Tree (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Jump.html">Jump (Node)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Jump.html">Character: Jump (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="KeyLogger.html">Key Logger (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ListAppend.html">List: Append (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ListInitNew.html">List: Init New (Node)</a></li>
@@ -147,7 +147,6 @@
 <li class="toctree-l3"><a class="reference internal" href="Print.html">Print (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Ray.html">Ray (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveObject.html">Remove Object (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="RemoveScene.html">Remove Scene (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RemoveVariable.html">Remove Variable (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ReplaceMesh.html">Replace Mesh (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RestartGame.html">Restart Game (Node)</a></li>
@@ -158,20 +157,20 @@
 <li class="toctree-l3"><a class="reference internal" href="SetActuatorValue.html">Set Actuator Value (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetAnimationFrame.html">Set Animation Frame (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetCamera.html">Set Camera (Node)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Set Gravity (Node)</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Character: Set Gravity (Node)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#inputs">Inputs:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#outputs">Outputs:</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="SetLightColor.html">Set Light Color (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetLightEnergy.html">Set Light Energy (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SetMaxJumps.html">Set Max Jumps (Node)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SetMaxJumps.html">Character: Set Max Jumps (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetMousePosition.html">Set Mouse Position (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetObjectData.html">Set Object Data (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetObjectDynamics.html">Set Object Dynamics (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetObjectParent.html">Set Object Parent (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="SetProperty.html">Set Property (Node)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SetWalkDirection.html">Set Walk Direction (Node)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SetWalkDirection.html">Character: Set Walk Direction (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="StartGame.html">Start Game (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="StartLogicNetwork.html">Start Logic Network (Node)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="StopActuator.html">Stop Actuator (Node)</a></li>
@@ -239,7 +238,7 @@
         
           <li><a href="actionnodes.html">Action Nodes</a> &raquo;</li>
         
-      <li>Set Gravity (Node)</li>
+      <li>Character: Set Gravity (Node)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -258,16 +257,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="set-gravity-node">
-<h1>Set Gravity (Node)<a class="headerlink" href="#set-gravity-node" title="Permalink to this headline">¶</a></h1>
-<p>Description</p>
+  <div class="section" id="character-set-gravity-node">
+<h1>Character: Set Gravity (Node)<a class="headerlink" href="#character-set-gravity-node" title="Permalink to this headline">¶</a></h1>
+<p>Category: <em>Physics</em></p>
+<p>Set the downward force for this character.</p>
 <div class="section" id="inputs">
 <h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
-<p>inputs</p>
+<dl class="docutils">
+<dt>Condition</dt>
+<dd>The input Condition</dd>
+<dt>Object</dt>
+<dd>The character object</dd>
+<dt>Gravity</dt>
+<dd>New Gravity</dd>
+</dl>
 </div>
 <div class="section" id="outputs">
 <h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
-<p>outputs</p>
+<dl class="docutils">
+<dt>Done</dt>
+<dd>True if the node performed successfully, else False</dd>
+</dl>
 </div>
 </div>
 

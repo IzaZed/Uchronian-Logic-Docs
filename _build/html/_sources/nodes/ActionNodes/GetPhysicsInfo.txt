@@ -1,5 +1,6 @@
-Get Physics Info (Node)
+Character: Get Physics Info (Node)
 ===========================================
+Category: *Physics*
 
 Gets the information from KX_CharacterWrapper of given object (if the object is set to Character Physics)
 

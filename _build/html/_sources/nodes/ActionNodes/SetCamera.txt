@@ -1,14 +1,20 @@
 Set Camera (Node)
 ===========================================
+Category: *Scene*
 
-Description
+Set the active camera.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input condition
+
+Camera
+    The camera to switch to
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

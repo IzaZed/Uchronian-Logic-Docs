@@ -1,14 +1,23 @@
 Set Light Energy (Node)
 ===========================================
+Category: *Lights*
 
-Description
+Set the emissive strength of a light.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Light Object
+    The light object of which to modify the RGB values
+
+Energy
+    The new energy for the light
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

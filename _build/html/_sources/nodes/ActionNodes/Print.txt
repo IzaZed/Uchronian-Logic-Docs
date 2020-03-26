@@ -17,4 +17,4 @@ Outputs:
 --------
 
 Done
-    True if the object reached destination, else False
+    True if the node performed successfully, else False

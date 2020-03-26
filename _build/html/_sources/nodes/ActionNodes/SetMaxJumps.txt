@@ -1,14 +1,23 @@
-Set Max Jumps (Node)
+Character: Set Max Jumps (Node)
 ===========================================
+Category: *Physics*
 
-Description
+Define how many times this character can jump.
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Object
+    The object containing the character wrapper
+
+Blue
+    The intensity of the blue comonent
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

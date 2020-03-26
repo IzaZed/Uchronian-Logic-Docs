@@ -1,14 +1,27 @@
-Set Walk Direction (Node)
+Character: Set Walk Direction (Node)
 ===========================================
+Category: *Physics*
 
-Description
+Delete a saved variable.
+
+Node Properties:
+----------------
+
+Remove From
+    File path, defaults to *File Path\Data*
+
 
 Inputs:
 -------
 
-inputs
+Condition
+    The input Condition
+
+Name
+    Remove the variable with this name
 
 Outputs:
 --------
 
-outputs
+Done
+    True if the node performed successfully, else False

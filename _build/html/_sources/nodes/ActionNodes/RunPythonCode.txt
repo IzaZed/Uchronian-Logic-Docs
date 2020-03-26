@@ -25,8 +25,8 @@ Argument
 Outputs:
 --------
 
-When Done
-    True if the object reached destination, else False
+Done
+    True if the node performed successfully, else False
 
 Returned Value
     Return value of the function if there is one, else None 

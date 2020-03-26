@@ -23,5 +23,5 @@ Name
 Outputs:
 --------
 
-When Done
-    True if the object reached destination, else False
+Done
+    True if the node performed successfully, else False
